@@ -13,7 +13,7 @@
  * @author Alex Kraemer
  * @version October 14, 2014
  */
-package Grid;
+
 
 /*
  * The Grid class contains all of the variables and methods needed to create
