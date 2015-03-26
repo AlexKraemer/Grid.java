@@ -180,7 +180,6 @@ public class Grid implements Runnable {
 /*
  * A simple plate class to hold temperature values, including a constructor
  * a getter and a setter.
- *
  */
 class Plate {
     double temp;
