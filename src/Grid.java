@@ -29,6 +29,12 @@ public class Grid implements Runnable {
      */
     final static int gridSize = 100;
     final static int NUMTHREADS = 4;
+    
+    // Default values for the edges of the grid.
+    double temp1 = 44.0;
+    double temp2 = 80.0;
+    double temp3 = 25.0;
+    double temp4 = 92.0;
 
     // Several variables to keep track of thread boundries, id's, grid error
     // as well as a 2D array of plates that will hold temeratures.
@@ -94,10 +100,10 @@ public class Grid implements Runnable {
         }
 
         for (int i = 1; i < gridSize - 1; i++) {
-            plateGrid[i][0].setTemp(44.0);
-            plateGrid[i][gridSize - 1].setTemp(80.0);
-            plateGrid[0][i].setTemp(25.0);
-            plateGrid[gridSize - 1][i].setTemp(92.0);
+            plateGrid[i][0].setTemp(temp1);
+            plateGrid[i][gridSize - 1].setTemp(temp2);
+            plateGrid[0][i].setTemp(temp3);
+            plateGrid[gridSize - 1][i].setTemp(temp4);
         }
     }
 
