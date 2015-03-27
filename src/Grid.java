@@ -29,6 +29,7 @@ public class Grid implements Runnable {
      */
     final static int gridSize = 100;
     final static int NUMTHREADS = 4;
+    final static double errTolerance = .005;
     
     // Default values for the edges of the grid.
     double temp1 = 44.0;
@@ -125,7 +126,7 @@ public class Grid implements Runnable {
 
     @Override
     public void run() {
-        while (gridError > .005) {
+        while (gridError > errTolerance) {
             threadIteration++;
             solveGrid();
         }
