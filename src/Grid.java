@@ -29,7 +29,7 @@ public class Grid implements Runnable {
      */
     final static int gridSize = 100;
     final static int NUMTHREADS = 4;
-    final static double errTolerance = .005;
+    final static double errTolerance = .5;
     
     // Default values for the edges of the grid.
     double temp1 = 44.0;
